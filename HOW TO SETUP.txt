@@ -1,0 +1,30 @@
+PREP 
+- clone the puregains_sql repostiory
+- install git
+- navigate to (selected) directory and git clone https://github.com/sam-w-thomas/puregains_sql
+- directory should be populated with all essential files
+
+------ PREP DONE
+
+1. INSTALL MySqlWorkbench, MySqlServer and all MySqlConnectors - theres a MySql installer for a load of their products
+2. Configure server - make sure to use LEGACY authentication - if you're not sure you've done this, run the original server and there should be the option to "Reconfigure" next to server
+3. Connect to server via MySqlWorkbench - Database > Connect to Database > *fill in details*
+4. Once in screen, got Server > Data Import
+5. Select "Import from Self-contained File" and select the database_sql file provided
+6. Scroll to bottom and click start Import (might not be scrollable and just exdend screen down, bit buggy)
+7. On "Schemas" on left make sure "mydb" is present, might night to click refresh button (top left of navigator pane) is not
+
+------- DATABASE INSTALLED
+
+8. Install PyCharm
+9. Find Puregains_backend repository link : https://github.com/sam-w-thomas/puregains_backend
+10. Create a PyCharm project from git repository
+11. Resolve any import requirements, important ones are flask and mysql connector but all are required to run
+12. Run app.py 
+
+-------- BACKEND INSTALLED
+
+You should now have a backend repostiroy that you can query on:
+"127.0.0.1:5000/api/"
+
+
